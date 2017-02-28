@@ -1,0 +1,18 @@
+
+
+	{{ template "theme/partials/header.html" . }}
+	{{ template "theme/partials/head-single.html" . }}
+
+
+		<div class="inner cover">
+			<h1 id="title">{{ .Title }}</h1>
+				<ul class="posts">
+					<li>
+						<a href="{{ .Permalink }}">{{ .Title }}</a>
+						<div class="meta">{{ .Date.Format "Mon, Jan 2, 2006" }}</div>
+					</li>
+				</ul>
+		</div>
+
+	{{ template "theme/partials/foot.html" . }}
+	{{ template "theme/partials/footer.html" . }}
